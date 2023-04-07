@@ -142,7 +142,7 @@
       this[globalName] = mainExports;
     }
   }
-})({"jC2qd":[function(require,module,exports) {
+})({"8yM83":[function(require,module,exports) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
@@ -557,25 +557,30 @@ function hmrAccept(bundle, id) {
 }
 
 },{}],"8lqZg":[function(require,module,exports) {
-//console.log('Hello world!');
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 var _apiServes = require("./js/api-serves");
 var _apiServesDefault = parcelHelpers.interopDefault(_apiServes);
 var _validatePassword = require("./js/validate-password"); // console.log(validatePassword)
  // console.log(validatePassword("1234"));
 var _validatePasswordDefault = parcelHelpers.interopDefault(_validatePassword);
+console.log("Hello world!");
 console.log((0, _apiServesDefault.default));
 
-},{"./js/validate-password":"fQf7l","@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3","./js/api-serves":"dk5uz"}],"fQf7l":[function(require,module,exports) {
-//export default 445;
+},{"./js/api-serves":"dk5uz","./js/validate-password":"fQf7l","@parcel/transformer-js/src/esmodule-helpers.js":"7uMEB"}],"dk5uz":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-function validatePassword(password) {
-    return true;
-}
-exports.default = validatePassword;
+const getUsers = ()=>{
+    console.log("getUsers");
+};
+const updateUsers = (id)=>{
+    console.log("updateUsers");
+};
+exports.default = {
+    getUsers,
+    updateUsers
+};
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"gkKU3":[function(require,module,exports) {
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"7uMEB"}],"7uMEB":[function(require,module,exports) {
 exports.interopDefault = function(a) {
     return a && a.__esModule ? a : {
         default: a
@@ -605,20 +610,15 @@ exports.export = function(dest, destName, get) {
     });
 };
 
-},{}],"dk5uz":[function(require,module,exports) {
+},{}],"fQf7l":[function(require,module,exports) {
+//export default 445;
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
-const getUsers = ()=>{
-    console.log("getUsers");
-};
-const updateUsers = (id)=>{
-    console.log("updateUsers");
-};
-exports.default = {
-    getUsers,
-    updateUsers
-};
+function validatePassword(password) {
+    return true;
+}
+exports.default = validatePassword;
 
-},{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}]},["jC2qd","8lqZg"], "8lqZg", "parcelRequire8cf3")
+},{"@parcel/transformer-js/src/esmodule-helpers.js":"7uMEB"}]},["8yM83","8lqZg"], "8lqZg", "parcelRequire8cf3")
 
 //# sourceMappingURL=index.975ef6c8.js.map

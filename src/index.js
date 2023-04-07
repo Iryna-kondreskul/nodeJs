@@ -1,4 +1,4 @@
-//console.log('Hello world!');
+console.log('Hello world!');
 import apiServise from './js/api-serves';
 console.log(apiServise);
 
